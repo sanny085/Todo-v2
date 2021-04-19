@@ -1,4 +1,3 @@
- 
 import './App.css';
 import Todo2 from './Todo2';
  
