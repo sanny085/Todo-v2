@@ -4,7 +4,6 @@ import { Container } from 'reactstrap';
 import TodoContext from './context/TodoContext';
 import todoReducer from './context/reducer';
 
-
 const Todo2 = () => {
     const [todos, dispatch] = useReducer(todoReducer, [])
     return (
