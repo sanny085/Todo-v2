@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 import React, { useContext } from 'react'
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { FaCheckDouble } from 'react-icons/fa';
 import TodoContext from "../context/TodoContext";
 import {REMOVE_TODO} from "../context/action.types";
-
 
 const Todos = () => {
     const {todos, dispatch} = useContext(TodoContext);
@@ -33,8 +31,6 @@ const Todos = () => {
     )
 }
 
-export default Todos
-=======
 import React from 'react'
 
 const Todos = () => {
@@ -46,4 +42,4 @@ const Todos = () => {
 }
 
 export default Todos;
->>>>>>> def265d (form adding)
+
