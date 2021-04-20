@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext } from 'react'
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { FaCheckDouble } from 'react-icons/fa';
@@ -33,3 +34,16 @@ const Todos = () => {
 }
 
 export default Todos
+=======
+import React from 'react'
+
+const Todos = () => {
+    return (
+        <div>
+            
+        </div>
+    )
+}
+
+export default Todos;
+>>>>>>> def265d (form adding)

@@ -11,8 +11,9 @@ import {ADD_TODO} from "../context/action.types";
 const TodoForm = () => {
    const [todoString, setTodoString] = useState(" ");
    const {dispatch } = useContext(TodoContext);
+ 
+   const handleSubmit = e => {
 
-   const handleSubmit = (e) =>{
      e.preventDefault();
      if(todoString === ""){
          return alert("Please Enter a Todo");
@@ -27,7 +28,6 @@ const TodoForm = () => {
      });
 
      setTodoString("");
-   
    }
     return (
     <>
