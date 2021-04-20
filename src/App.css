@@ -15,9 +15,9 @@ h1{
   margin-top:20px;
   color:aliceblue;
 }
-form{
+Form{
   position:fixed;
-  bottom:500px;
+  bottom:200px;
   right:30%;
   left:30%;
   border-radius:8px;

@@ -9,22 +9,22 @@ import TodoContext from '../context/TodoContext';
 import {ADD_TODO} from "../context/action.types";
 
 const TodoForm = () => {
-   const [todoString, setTodoString] = useState("");
-   const { dispatch } = useState(TodoContext);
+   const [todoString, setTodoString] = useState(" ");
+   const {dispatch } = useContext(TodoContext);
 
-   const handleSubmit = e =>{
+   const handleSubmit = (e) =>{
      e.preventDefault();
      if(todoString === ""){
          return alert("Please Enter a Todo");
      }
-     const todo = {
+     const todo1 = {
         todoString,
         id : v4()
      };
      dispatch({
-         type : ADD_TODO,
-         payload : todo
-     })
+         type: ADD_TODO,
+         payload: todo1
+     });
 
      setTodoString("");
    
@@ -35,7 +35,7 @@ const TodoForm = () => {
       <FormGroup>
       
       <InputGroup>
-        <Input type="text" name="todo" value={todoString} onChange={e =>{setTodoString(e.target.value)}} id="todo" placeholder="Your Next Todo"/>
+        <Input type="text" name="todo" id="todo" placeholder="Your Next Todo" value={todoString} onChange={e => (setTodoString(e.target.value)) }/>
     
         <InputGroupAddon addonType="prepend">
           <Button color="warning">Add</Button>
