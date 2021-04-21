@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import {
-    Button, Form, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupText
+    Button, Form, FormGroup, Input, InputGroup, InputGroupAddon
 } from "reactstrap";
 import {v4} from 'uuid';
 
@@ -9,8 +9,8 @@ import TodoContext from '../context/TodoContext';
 import {ADD_TODO} from "../context/action.types";
 
 const TodoForm = () => {
-   const [todoString, setTodoString] = useState(" ");
-   const {dispatch } = useContext(TodoContext);
+   const [todoString, setTodoString] = useState("");
+   const { dispatch } = useContext(TodoContext);
  
    const handleSubmit = e => {
 
