@@ -1,0 +1,42 @@
+.container1
+ {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top:130px;
+ }
+ .container1 h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size:4rem;
+  font-family:600;
+  color:#FAF8FC;
+ }
+.container1 .containerBody{
+  width:65%;
+  height:280px;
+  text-align: center; 
+  display: block;
+  position: relative;
+  -moz-box-shadow:    1px 1px 3px 4px #ccc;
+  -webkit-box-shadow: 1px 1px 3px 4px #ccc;
+  box-shadow:         1px 1px 3px 4px #ccc;  
+}
+.container1 .containerBody::after {
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}
+.h2margin{
+  margin-top:2px;
+  font-size: 3rem; 
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 3px;
+}
+.helloText{
+  color: #03203C ;
+}
