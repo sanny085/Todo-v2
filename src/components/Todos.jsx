@@ -4,6 +4,7 @@ import { FaCheckDouble } from 'react-icons/fa';
 import TodoContext from "../context/TodoContext";
 import {REMOVE_TODO} from "../context/action.types";
 
+
 const Todos = () => {
     const {todos, dispatch} = useContext(TodoContext);
 
@@ -11,7 +12,7 @@ const Todos = () => {
         <>
          <ListGroup className="mt-5 mb-2 items">
             {
-                todos.map((todo) => (
+               todos.map((todo) => (
                     <ListGroupItem key={todo.id}>
                     { todo.todoString }
                     <span className="float-right" onClick={ () =>{
@@ -31,15 +32,4 @@ const Todos = () => {
     )
 }
 
-import React from 'react'
-
-const Todos = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default Todos;
-
+export default Todos
