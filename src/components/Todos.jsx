@@ -9,7 +9,7 @@ const Todos = () => {
     const {todos, dispatch} = useContext(TodoContext);
 
     return (
-        <>
+      <>
          <ListGroup className="mt-5 mb-2 items">
             {
                todos.map((todo) => (
@@ -27,8 +27,7 @@ const Todos = () => {
                     ))
             }
          </ListGroup>
-            
-        </>
+      </>
     )
 }
 
