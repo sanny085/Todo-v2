@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Todo2 from './Todo2';
 
 import './App.css';
+
 function App() {
   return (
     <div className="App">
