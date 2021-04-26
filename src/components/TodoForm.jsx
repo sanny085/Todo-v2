@@ -7,15 +7,15 @@ import {v4} from 'uuid';
 
 import TodoContext from '../context/TodoContext';
 import {ADD_TODO} from "../context/action.types";
-
+    
 const TodoForm = () => {
    const [todoString, setTodoString] = useState("");
    const { dispatch } = useContext(TodoContext);
- 
+     
    const handleSubmit = e => {
-
+     
      e.preventDefault();
-     if(todoString === ""){
+     if(todoString === "") {
          return alert("Please Enter a Todo");
      }
      const todo1 = {
@@ -26,8 +26,9 @@ const TodoForm = () => {
          type: ADD_TODO,
          payload: todo1
      });
-
+     
      setTodoString("");
+
    }
     return (
     <>
