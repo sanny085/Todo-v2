@@ -34,7 +34,6 @@ const TodoForm = () => {
     <>
     <Form onSubmit={handleSubmit}>
       <FormGroup>
-      
       <InputGroup>
         <Input type="text" name="todo" id="todo" placeholder="Your Next Todo" value={todoString} onChange={e => (setTodoString(e.target.value)) }/>
     
